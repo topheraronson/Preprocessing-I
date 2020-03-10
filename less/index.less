@@ -3,6 +3,14 @@
 
 // Variables
 @font:  'Inter', sans-serif;
+@section-color: #eff4fa;
+
+
+// Mixins
+.accent-color() {
+	background-color: darkgrey;
+	color: white;
+} 
 
 // Reset
 html, body, div, span, applet, object, iframe,
@@ -66,11 +74,6 @@ body {
 	font-family: @font;
 }
 
-header, nav, section, div, footer, a, p, table, tr, th, td {
-	border: 1px solid black;
-	margin: 1%;
-}
-
 .container {
 	width: 90%;
 	max-width: 880px;
@@ -78,6 +81,8 @@ header, nav, section, div, footer, a, p, table, tr, th, td {
 }
 
 header {
+
+	margin: 2% 0;
 
 	nav {
 		display: flex;
@@ -89,10 +94,59 @@ header {
 			text-decoration: none;
 			font-size: 1.2rem;
 			transition: 0.3s;
+			margin-left: 2%;
 		}
 
 		a:hover {
 			color: lightgrey;
+		}
+	}
+}
+
+#about {
+	background-color:@section-color;
+	padding: 2%;
+	height: 50vh;
+	.about-image {
+		background-image: url(../images/ben-kolde-6c8qrsQN_lY-unsplash.jpg);
+		background-size: cover;
+		background-color: palevioletred;
+		height: 15vh;
+		width: 20%;
+	}
+
+	.text-container {
+
+		h1 {
+			font-size: 3.2rem;
+			margin-top: 1%;
+		}
+
+		h6 {
+			font-size: 1.4rem;
+			margin: 1% 0;
+		}
+
+		p {
+			font-size: 1.6rem;
+			margin: 3% 0;
+			padding: 2% 0;
+			border-top: 1px solid lightgrey;
+		}
+
+		a {
+			.accent-color();
+			text-decoration: none;
+			border-radius: 2px;
+			margin: 1% 0;
+			padding: 1%;
+			font-size: 1.6rem;
+			transition: 0.3s;
+		}
+
+		a:hover {
+			background-color: lightgrey;
+			color: black;
 		}
 	}
 }
