@@ -267,3 +267,7 @@ header nav a:hover {
 #work-history table tr:nth-child(even) {
   background-color: #dddddd;
 }
+footer {
+  font-size: 1.2rem;
+  text-align: center;
+}
