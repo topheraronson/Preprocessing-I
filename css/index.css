@@ -225,3 +225,23 @@ header nav a:hover {
   align-items: flex-start;
   margin: 3% 0;
 }
+#skills div.text-container {
+  width: 48%;
+  font-size: 1.6rem;
+}
+#skills div.text-container h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2%;
+}
+#skills div.text-container p {
+  line-height: 1.9rem;
+}
+#skills div.text-container table {
+  width: 100%;
+}
+#skills div.text-container table td,
+#skills div.text-container table th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 3%;
+}
