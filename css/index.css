@@ -147,3 +147,22 @@ body {
 body {
   font-family: 'Inter', sans-serif;
 }
+header,
+nav,
+section,
+div,
+footer,
+a,
+p,
+table,
+tr,
+th,
+td {
+  border: 1px solid black;
+  margin: 1%;
+}
+.container {
+  width: 90%;
+  max-width: 880px;
+  margin: 0 auto;
+}
