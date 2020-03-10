@@ -94,12 +94,21 @@ header {
 		justify-content: flex-end;
 		align-items: center;
 
+		@media(max-width: 500px) {
+			flex-direction: column;
+			justify-content: center;
+		}
+
 		a {
 			color: black;
 			text-decoration: none;
 			font-size: 1.2rem;
 			transition: 0.3s;
 			margin-left: 2%;
+
+			@media(max-width: 500px) {
+				margin-top: 2.5%;
+			}
 		}
 
 		a:hover {
@@ -120,23 +129,51 @@ header {
 		background-image: url(../images/ben-kolde-6c8qrsQN_lY-unsplash.jpg);
 		background-size: cover;
 		background-color: palevioletred;
-		height: 15vh;
-		width: 20%;
+		height: 20vh;
+		width: 30%;
 		margin-bottom: 2%;
+
+		@media(max-width: 500px) {
+			display: none;
+		}
 	}
 
 	.text-container {
 
 		padding-bottom: 4%;
 
+		@media(max-width: 500px) {
+			text-align: center;
+			padding: 3%;
+		}
+
 		h1 {
 			font-size: 3.2rem;
 			margin-top: 1%;
+
+			span.hyphan {
+
+				@media(max-width: 850px) {
+					display: none;
+				}
+			}
+
+			span.line-break {
+				display: none;
+
+				@media(max-width: 850px) {
+					display: inline;
+				}
+			}
 		}
 
 		h6 {
 			font-size: 1.4rem;
 			margin: 1% 0;
+
+			@media(max-width: 500px) {
+				display: none;
+			}
 		}
 
 		p {
@@ -144,6 +181,10 @@ header {
 			margin: 2% 0;
 			padding: 2% 0;
 			border-top: 1px solid lightgrey;
+
+			@media(max-width:500px) {
+				text-align: center;
+			}
 		}
 
 		a {
@@ -168,9 +209,20 @@ header {
 	align-items: flex-start;
 	margin: 3% 0;
 
+	@media(max-width: 500px) {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
 	div.text-container {
 		width: 48%;
 		font-size: 1.6rem;
+
+		@media(max-width: 500px) {
+			width: 100%;
+			margin: 4% 0;
+		}
 
 		h2 {
 			.h2-info();

@@ -163,12 +163,23 @@ header nav {
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  header nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
 header nav a {
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
   transition: 0.3s;
   margin-left: 2%;
+}
+@media (max-width: 500px) {
+  header nav a {
+    margin-top: 2.5%;
+  }
 }
 header nav a:hover {
   color: lightgrey;
@@ -185,26 +196,60 @@ header nav a:hover {
   background-image: url(../images/ben-kolde-6c8qrsQN_lY-unsplash.jpg);
   background-size: cover;
   background-color: palevioletred;
-  height: 15vh;
-  width: 20%;
+  height: 20vh;
+  width: 30%;
   margin-bottom: 2%;
+}
+@media (max-width: 500px) {
+  #about .about-image {
+    display: none;
+  }
 }
 #about .text-container {
   padding-bottom: 4%;
+}
+@media (max-width: 500px) {
+  #about .text-container {
+    text-align: center;
+    padding: 3%;
+  }
 }
 #about .text-container h1 {
   font-size: 3.2rem;
   margin-top: 1%;
 }
+@media (max-width: 850px) {
+  #about .text-container h1 span.hyphan {
+    display: none;
+  }
+}
+#about .text-container h1 span.line-break {
+  display: none;
+}
+@media (max-width: 850px) {
+  #about .text-container h1 span.line-break {
+    display: inline;
+  }
+}
 #about .text-container h6 {
   font-size: 1.4rem;
   margin: 1% 0;
+}
+@media (max-width: 500px) {
+  #about .text-container h6 {
+    display: none;
+  }
 }
 #about .text-container p {
   font-size: 1.6rem;
   margin: 2% 0;
   padding: 2% 0;
   border-top: 1px solid lightgrey;
+}
+@media (max-width: 500px) {
+  #about .text-container p {
+    text-align: center;
+  }
 }
 #about .text-container a {
   background-color: darkgrey;
@@ -225,9 +270,22 @@ header nav a:hover {
   align-items: flex-start;
   margin: 3% 0;
 }
+@media (max-width: 500px) {
+  #skills {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 #skills div.text-container {
   width: 48%;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  #skills div.text-container {
+    width: 100%;
+    margin: 4% 0;
+  }
 }
 #skills div.text-container h2 {
   font-size: 2.4rem;
