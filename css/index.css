@@ -245,3 +245,25 @@ header nav a:hover {
   text-align: left;
   padding: 3%;
 }
+#work-history h2 {
+  font-size: 2.4rem;
+  margin-bottom: 2%;
+}
+#work-history table {
+  border-collapse: collapse;
+  width: 100%;
+  font-size: 1.6rem;
+  margin-bottom: 2%;
+}
+#work-history table th {
+  font-weight: bold;
+}
+#work-history table td,
+#work-history table th {
+  border: 1px solid darkgrey;
+  text-align: left;
+  padding: 8px;
+}
+#work-history table tr:nth-child(even) {
+  background-color: #dddddd;
+}

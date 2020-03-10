@@ -12,6 +12,11 @@
 	color: white;
 } 
 
+.h2-info() {
+	font-size: 2.4rem;
+	margin-bottom: 2%;
+}
+
 // Reset
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -168,8 +173,7 @@ header {
 		font-size: 1.6rem;
 
 		h2 {
-			font-size: 2.4rem;
-			margin-bottom: 2%;
+			.h2-info();
 		}
 
 		p {
@@ -188,3 +192,30 @@ header {
 	}
 }
 
+#work-history {
+
+	h2 {
+		.h2-info();
+	}
+
+	table {
+		border-collapse: collapse;
+		width: 100%;
+		font-size: 1.6rem;
+		margin-bottom: 2%;
+
+		th {
+			font-weight: bold;
+		}
+
+		td, th {
+			border: 1px solid darkgrey;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+	}
+}
